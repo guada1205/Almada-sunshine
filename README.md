@@ -10,3 +10,4 @@ Este emprendimiento es para cualquier tipo de persona ***sin importar*** entre 1
 Nuestra marca se encuentra desarrollada con una paleta de colores propia y una fuente seleccionada :
 Fuentes: ROBOTO MONO -light 300, Regular400, Medium500. 
 Paleta de colores: Golden yellow (#FFDD00), Cyan Process(#5BC0EB), Middle Purple(#D388AD), Magic Mint(#AAFAC8), Dark Liver(#55505C).
+Logo: ![This is an image](https://github.com/guada1205/Almada-sunshine/blob/main/img/sunshine.jpg?raw=true)
