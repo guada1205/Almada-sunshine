@@ -25,4 +25,6 @@ FontName: ROBOTO MONO - light 300, Regular400, Medium500, Bold 700.
 
 #264653 Charcoal: Color con mayor profundiad, dentro del ciclo de vida del "Persian Green", acompaña a este color y crea sombras relevantes.
 
-#DE1A1A Maximun Red: Ante la presencia de un error que haya que notificar al usuario, se utilizara el rojo en su maxima expresion.[This is an image](https://github.com/guada1205/Almada-sunshine/blob/main/Recursos/Paleta%20de%20Colores%20-%20Sunshine.png)
+#DE1A1A Maximun Red: Ante la presencia de un error que haya que notificar al usuario, se utilizara el rojo en su maxima expresion.
+
+![This is an image](https://github.com/guada1205/Almada-sunshine/blob/main/Recursos/Paleta%20de%20Colores%20-%20Sunshine.png)
