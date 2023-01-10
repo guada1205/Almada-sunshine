@@ -12,6 +12,17 @@ Este emprendimiento es para cualquier tipo de persona **_sin importar_** entre 1
 
 Nuestra marca se encuentra desarrollada con una paleta de colores propia y una fuente seleccionada
 
-**_Fuentes_**: ROBOTO MONO -light 300, Regular400, Medium500.
+**_Fuentes_**:
+FontName: ROBOTO MONO - light 300, Regular400, Medium500, Bold 700.
 
-**_Paleta de colores_**: Golden yellow (#FFDD00), Cyan Process(#5BC0EB), Middle Purple(#D388AD), Magic Mint(#AAFAC8), Dark Liver(#55505C). ![This is an image](https://github.com/guada1205/Almada-sunshine/blob/main/Recursos/Paleta%20de%20Colores%20-%20Sunshine.png)
+**_Paleta de colores_**:
+
+#FEDC8A Jasmine: Color principal del e-commerce, Se usa tanto en el Nav como en Buttons. Es un color semejante a los Girasoles, pero que a la vez da un aire fresco a la vista. En algunos casos puede variar su opacidad
+
+#2A9D8F Persian Green: Segundo color primario en nuestro negocio, Es un color contrastante, pero a la vez amigable con el principal. Representando La naturaleza, Gracias a la "Tranquilidad" que transmite este color, podemos usarlo como fondo de nuestra aplicacion, donde el ojo del usuario recaerá el Mayor tiempo
+
+#EA526F Persian Pink: Color Contrastante en comparación a los anteriores, lo utilizamos para resaltar información importante, hacer notar logos, entre otros.
+
+#264653 Charcoal: Color con mayor profundiad, dentro del ciclo de vida del "Persian Green", acompaña a este color y crea sombras relevantes.
+
+#DE1A1A Maximun Red: Ante la presencia de un error que haya que notificar al usuario, se utilizara el rojo en su maxima expresion.[This is an image](https://github.com/guada1205/Almada-sunshine/blob/main/Recursos/Paleta%20de%20Colores%20-%20Sunshine.png)
