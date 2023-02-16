@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+    ---jasmine:  #fedc8a;
+    ---blanco: #FFFFFF;
+    ---dutchwhite: rgb(236, 219, 177);
+    ---persiangreen: #2A9D8F;
+    ---black: #000000;
+    --degradado:linear-gradient(90deg, var(---blanco),var(---persiangreen));
+    
+}
+
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection{
+    background: var(---jasmine);
+    color: white;
+} 
+
+html{
+    font-size: 62.4%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body{
+    background: whitesmoke;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(---jasmine);
+    font-size: 1.8rem;
+    color: #666;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.bg-2{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.15) 86%, rgba(0,0,0,0.18) 92%);    margin-bottom: 2rem;
+    border-radius: 30px;
+}
+.text-stroke{
+    color: #000;
+    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px var(---persiangreen);
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background-color:var(---jasmine);
+    padding: 0 5rem 0 5rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    
+    box-shadow: -1px 6px 31px 0px rgba(0,0,0,0.1);
+    
+}
+
+header input {
+    display: none;
+}   
+
+header label{
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+header .navbar{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+
+    top: 100%;
+    left: 0;
+    width: 300px;
+
+    background-color: white;
+    padding: 1rem 2rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0 , .2);
+
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: all 0.5s ease;
+    
+}
+
+header input:checked ~ .navbar{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+header input:checked ~ label::before{
+    content: '\f00d';
+}
+
+header img{
+    height: 70px;
+    padding: 0;
+    margin: 0;
+}
+.banner-container{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.Banner{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SubBanner{
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1.5rem 1rem rgba(0, 0, 0 , .01);
+}
+
+.SubBanner img{
+    width: 100%;
+}
+
+.Banner img{
+    height: auto;
+} 
+.cont-logo{
+    
+    display: flex;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: var(---black);
+}
+
+header .logo span{
+    color: var(---black);
+}
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+header .navbar a:hover{
+    color: var(---persiangreen);
+}
+
+.header-sesion{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    background:var(---jasmine)
+
+}
+
+#buttonnavbar{
+    background-color: #FEDC8A;
+    width: 4rem;
+}
+.header-sesion a{
+    margin: 0 1rem 0 1rem;
+}
+
+/*region detailproduct*/
+
+.detail_product{
+    padding-bottom: 3rem;
+}
+
+.detail_product .columna{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: white;
+     border-radius: 30px;
+     box-shadow: 0 .5rem 1rem rgba(0, 0, 0 , .2);
+
+}
+
+.image{
+    flex: 1 1 10rem;
+    width: 32rem;   
+    margin: 2rem 4rem 2rem 2rem;
+    border-radius: 30px;
+    box-shadow: 5px rgba(0,0,0,0.60) ;
+}
+
+.detail_product .content{
+    margin: 2rem;
+    flex: 1 1 30rem;
+}
+
+.detail_product .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+
+.detail_product .content p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+
+}
+
+.detail_product .content .bottons a:last-child{
+    margin-left: 2rem;
+
+}
+
+.detail_product{
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+}
+.detail_product .columna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*#endregion detailproduct*/
+
+/*#region footer*/
+.footer{
+    width: 100vw;
+    height: auto;
+    font-size: 1.7rem;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100vw;
+    margin: 0 auto;
+    background-color: rgb(253, 241, 241);
+    border: rgb(253, 241, 241);
+    padding: 2rem 1rem 0 ;
+    box-shadow: 7px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer-listado{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.footer-listado li{
+    margin: 0 13px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+}
+
+.spacer{
+    height: 25px;
+}
+/*#endregion footer*/
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+  
+    
+}
+
+@media(max-width:940px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(---jasmine);
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, 2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity:0;
+        transition: .2s linear;
+    
+    }
+
+
+    header .navbar a{
+        margin: 1.3rem;
+        font-size: 2rem;
+    }
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+     content: '\f00d';
+    }
+    html{
+        font-size: 49%;
+
+    }  
+}
