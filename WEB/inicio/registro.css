@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+    ---jasmine:  #FEDC8A;
+    ---blanco: #FFFFFF;
+    ---dutchwhite: #ECDBB1;
+    ---persiangreen: #2A9D8F;
+    ---black: #000000;
+    --degradado:linear-gradient(90deg, var(---blanco),var(---persiangreen));
+    
+}
+
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection{
+    background: var(---jasmine);
+    color: white;
+} 
+
+html{
+    font-size: 62.4%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body{
+    background: whitesmoke;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(---jasmine);
+    font-size: 1.8rem;
+    color: #666;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.heading{
+    text-align: center;
+    background: var(---dutchwhite);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background-color:var(---jasmine);
+    padding: 0 5rem 0 5rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    
+    box-shadow: -1px 6px 31px 0px rgba(0,0,0,0.1);
+    
+}
+
+header input {
+    display: none;
+}   
+
+header label{
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+header .navbar{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+
+    top: 100%;
+    left: 0;
+    width: 300px;
+
+    background-color: white;
+    padding: 1rem 2rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0 , .2);
+
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: all 0.5s ease;
+    
+}
+
+header input:checked ~ .navbar{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+header input:checked ~ label::before{
+    content: '\f00d';
+}
+
+header img{
+    height: 70px;
+    padding: 0;
+    margin: 0;
+}
+.banner-container{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.Banner{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SubBanner{
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px rgba(0,0,0,0.60);
+}
+
+.Banner img{
+    height: auto;
+} 
+.cont-logo{
+    
+    display: flex;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: var(---black);
+}
+
+header .logo span{
+    color: var(---black);
+}
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+header .navbar a:hover{
+    color: var(---persiangreen);
+}
+
+.header-sesion{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    background:var(---jasmine)
+
+}
+
+.header-sesion a{
+    margin: 0 1rem 0 1rem;
+}
+
+/*region */
+
+.registro{
+    width: 400px;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 1rem;
+    box-shadow: 7px 13px 37px #000000;
+}
+
+.registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+
+}
+
+.controls{
+    width: 100%;
+    background: #ECDBB1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+    font-size: 18px;
+}
+
+.registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5rem;
+}
+
+.registro a:hover{
+    color: var(---persiangreen);
+    text-decoration: underline;
+}
+
+.registro .btn{
+width: 100%;
+background: #ECDBB1;
+border:#000000;
+padding: 12px;
+color: black;
+margin: 16px 0;
+font-size: 16px;
+
+}
+
+/*#region footer*/
+.footer{
+    width: 100vw;
+    height: auto;
+    font-size: 1.7rem;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100vw;
+    margin: 0 auto;
+    background-color: rgb(253, 241, 241);
+    border: rgb(253, 241, 241);
+    padding: 2rem 1rem 0 ;
+    box-shadow: 7px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.footer-listado{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.footer-listado li{
+    margin: 0 13px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+}
+
+.spacer{
+    height: 25px;
+}
+/*#endregion footer*/
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+  
+    
+}
+
+@media(max-width:940px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(---jasmine);
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, 2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity:0;
+        transition: .2s linear;
+    
+    }
+
+
+    header .navbar a{
+        margin: 1.3rem;
+        font-size: 2rem;
+    }
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+     content: '\f00d';
+    }
+    html{
+        font-size: 49%;}
+    }
